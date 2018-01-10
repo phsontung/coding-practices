@@ -10,7 +10,7 @@ def function_test(locations):
         location = locations[i]
         try:
             city = location["city"]
-            if value not in cities:
+            if city not in cities:
                 cities.append(city)
         except KeyError as ex:
             print(ex)
